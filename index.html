@@ -26,12 +26,13 @@ rel="stylesheet">
 
 </head>
 <body>
-  <header class="container mx-auto mt-3 mb-10 lg:mt-6 lg:mb-24 lg:space-y-6 ">
+  <header class="container mx-auto mt-3 mb-10 xl:w-[80%]  w-[90%] lg:mt-6 lg:mb-24 lg:space-y-6 ">
+    <!-- Navbar Section -->
     <nav>
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost pl-0 lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -41,24 +42,73 @@ rel="stylesheet">
               <li><a class="text-[#424247] font-medium font-rale">Search</a></li>
             </ul>
           </div>
-          <a class=" lg:text-3xl text-lg font-extrabold font-rale">MTH-Ticket</a>
+          <a class="lg:text-4xl text-lg font-extrabold font-rale">MTH-<span class="text-[#1DD100]">Ticket</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-2">
-            <li><a class="text-[#424247] text-lg font-medium font-rale">Home</a></li>
-            <li><a class="text-[#424247] text-lg font-medium font-rale">About</a></li>
-            <li><a class="text-[#424247] text-lg font-medium font-rale">Destination</a></li>
-            <li><a class="text-[#424247] text-lg  font-medium font-rale">Search</a></li>
+            <li><a class="text-[#424247] text-xl font-medium font-rale">Home</a></li>
+            <li><a class="text-[#424247] text-xl font-medium font-rale">About</a></li>
+            <li><a class="text-[#424247] text-xl font-medium font-rale">Destination</a></li>
+            <li><a class="text-[#424247] text-xl  font-medium font-rale">Search</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn font-rale font-bold bg-[#1DD1001A] text-[#1DD100] border-[#1DD10066]">Bus <img src="./images/bus-icon.png" alt="nav-logo"></a>
+          <a class="btn lg:px-6 lg:text-lg font-rale font-bold bg-[#1DD1001A] text-[#1DD100] border-[#1DD10066]">Bus <img src="./images/bus-icon.png" alt="nav-logo"></a>
         </div>
       </div>
     </nav>
-  </header>
-  <main>
 
+     <!-- Header main Section -->
+     <section class="relative">
+       <div class="w-[97%] mx-auto lg:w-auto lg:min-h-[700px] min-h-[350px] bg-[linear-gradient(180deg,rgba(3,7,18,.05),rgba(3,7,18,0)),url(./images/banner.png)] bg-no-repeat bg-cover rounded-3xl bg-center  flex flex-col items-center justify-center lg:gap-10">
+       <div class="text-center w-[90%] lg:pb-20 h-full space-y-4  lg:space-y-10">
+          <h1 class="text-white text-2xl md:text-3xl lg:text-7xl font-rale font-bold ">End-to-End Travel with</h1>
+          <h1 class="text-[#1DD100] text-2xl md:text-3xl lg:text-7xl font-rale font-bold">MTH Paribahan</h1>
+          <p class="text-white lg:text-xl font-int max-w-lg mx-auto">
+           Embark on a journey of comfort and convenience with MTH Paribahan! We are thrilled to invite you to experience travel like never before.
+           So, Book your tickets now!</p>
+          <button class="btn lg:btn-lg  bg-[#1DD100] border-none ">
+           <a class="w-full  h-full flex justify-center items-center font-rale font-bold "
+            href="#main">Buy Tickets</a>
+          </button>
+         </div>
+       </div>
+       
+         <!-- Optional Part -->
+       <div class="flex flex-wrap  justify-center lg:gap-10 mt-4 lg:mt-0 lg:flex-nowrap gap-2 lg:absolute z-10 lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-70px]">
+       
+        <div class="bg-white rounded-3xl p-5 lg:p-8  flex lg:justify-center items-center border-x-2 lg:border-x-0 lg:border-b-4 border-[#1DD100] gap-2 lg:gap-6 lg:min-w-[300px] min-w-[220px]">
+           <img src="./images/people.png" alt>
+           <div>
+             <p class="font-int font-extrabold text-xl lg:text-3xl">500K+</p>
+             <p class="text-gray-500 font-int text-sm">Registered users</p>
+           </div>
+         </div>
+
+         <div class="bg-white rounded-3xl p-5 lg:p-8 flex lg:justify-center items-center border-x-2 lg:border-x-0 lg:border-b-4 border-[#1DD100] gap-2 lg:min-w-[300px] lg:gap-6 min-w-[220px]">
+           <img src="./images/ticket-cupon.png" alt>
+           <div>
+             <p class="font-int font-extrabold text-xl lg:text-3xl">1.7 lacks</p>
+             <p class="text-gray-500 font-int text-sm">Tickets sold</p>
+           </div>
+         </div>
+
+         <div class=" bg-white rounded-3xl p-5 lg:p-8 flex lg:justify-center items-center border-x-2 lg:border-x-0 lg:border-b-4 border-[#1DD100] gap-2 lg:gap-6 lg:min-w-[300px] min-w-[220px]">
+           <img src="./images/stoppage.png" alt>
+           <div>
+             <p class="font-int font-extrabold text-xl lg:text-3xl">80K+</p>
+             <p class="text-gray-500 font-int text-sm">Rental partners</p>
+           </div>
+         </div>
+
+       </div> 
+     </section>
+      
+  </header>
+
+
+  <main id="main">
+       
   </main>
   <footer>
 
