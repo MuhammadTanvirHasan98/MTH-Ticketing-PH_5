@@ -1,9 +1,15 @@
+const MAX_ALLOWED_SEATS = 4;
 
 const allBtn = document.getElementsByClassName("add-btn");
 
 
 for(const btn of allBtn){
     btn.addEventListener("click", function(event){
+     const currentSeatCount = getSeatCount();
+     if(currentSeatCount >= MAX_ALLOWED_SEATS){
+        return;
+     }
+
      const name = btn.innerText;
      btn.style.backgroundColor = '#1DD100';
      btn.style.color = 'white';
@@ -38,10 +44,14 @@ for(const btn of allBtn){
     });
 }
 
+function getSeatCount() {
+  const seatCount = document.getElementById("seat-count").innerText;
+  return parseInt(seatCount);
+}
+
 function updateSeatCount() {
-  const defaultCount = document.getElementById("seat-count").innerText;
-  const convertDefaultCount = parseInt(defaultCount);
-  document.getElementById("seat-count").innerText = convertDefaultCount + 1;
+  const seatCount = getSeatCount();
+  document.getElementById("seat-count").innerText = seatCount + 1;
 }
 
 
